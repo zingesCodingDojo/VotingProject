@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import { List, Map } from 'immutable';
 
+// DOCUMENTATION: https://facebook.github.io/immutable-js/
 /*
 The purpose of this file is to test immutability!
 Numbers are immutable and thus this test aims to prove that is indeed the case.
