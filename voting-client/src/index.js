@@ -1,0 +1,1 @@
+console.log("Hello World! I am your index.js file located under voting-client/src/index.js")
