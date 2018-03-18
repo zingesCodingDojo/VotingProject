@@ -53,9 +53,9 @@ Returns a new Collection of the same type which excludes the first amount entrie
 skip(amount: number): this
 */
 
-export function vote( state, entry ) {
-    return state.updateIn(
-    ['vote', 'tally', entry],
+export function vote( voteState, entry ) {
+    return voteState.updateIn(
+    ['tally', entry],
     0,
     tally => tally + 1
     );
