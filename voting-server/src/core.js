@@ -1,5 +1,8 @@
 import { List, Map } from 'immutable';
 
+// initialState will always be a hashmap (Map) for our app and it would be okay to declar a variable here and import it to test files.
+export const INITIAL_STATE = Map();
+
 export function setEntries(state, entries) {
     return state.set('entries', List(entries));
 }
