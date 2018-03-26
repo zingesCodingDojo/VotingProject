@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+// var autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: [
@@ -19,7 +20,7 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     output: {
-        path: __dirname + './dist',
+        path: __dirname + '/dist',
         publicPath: '/',
         filename: 'bundle.js'
     },
@@ -31,6 +32,9 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ]
+    // postcss: function () {
+    //     return [autoprefixer];
+    // }
 };
 
 // Uncover index.js as entrypoint and build into dist/bundle.js bundle!
